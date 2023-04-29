@@ -15,10 +15,10 @@ const Navbar = () => {
                 <div>
                     <Link to='/' className="text-xl font-black">Mein<span className="text-orange-500">Meister</span></Link>
                 </div>
-                <div className="md:flex md:gap-8 md:items-center font-semibold hidden md:block">
+                <div className="space-x-8 md:gap-8 md:items-center font-semibold hidden md:block">
                     <Link className="hover:text-gray-300 hover:scale-105 duration-300" to='/become-a-meister'>Postanite majstor</Link>
                     <Link className="hover:text-gray-300 hover:scale-105 duration-300" to='/login'>Prijavite se</Link>
-                    <Link className="border border-white px-8 py-2 rounded-xl hover:bg-white hover:text-black hover:scale-105 duration-300 font-black" to='/register'>Pridruzite nam se</Link>
+                    <Link className="border border-white px-8 py-2 rounded-xl hover:bg-white hover:text-black hover:scale-105 duration-300 font-black" to='/register'>Pridružite nam se</Link>
                 </div>
                 <div className="md:hidden">
                     <svg onClick={openBurger} className="w-[20px] cursor-pointer"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg>
@@ -29,7 +29,7 @@ const Navbar = () => {
                         <div className="flex flex-col py-8 gap-8 text-center"> 
                             <Link className="hover:text-gray-300 hover:scale-105 duration-300" to='/become-a-meister'>Postanite majstor</Link>
                             <Link className="hover:text-gray-300 hover:scale-105 duration-300" to='/login'>Prijavite se</Link>
-                            <Link className="border border-white px-8 py-2 rounded-xl hover:bg-white hover:text-black hover:scale-105 duration-300 font-black" to='/register'>Pridruzite nam se</Link>
+                            <Link className="border border-white px-8 py-2 rounded-xl hover:bg-white hover:text-black hover:scale-105 duration-300 font-black" to='/register'>Pridružite nam se</Link>
                         </div>
                     </div>
                 </div> 
