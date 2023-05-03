@@ -1,10 +1,7 @@
 import Category from "./Category";
-import { useState } from "react";
-import cats from '../data/categories.json';
+import categories from '../data/categories.json';
 
 const Categories = () => {
-  const [categories, setCategories] = useState(cats);
-
   return (
     <div className="py-[128px]">
       <div className="mx-auto w-[320px] sm:w-[480px] md:w-[728px] 2xl:w-[1200px]">
