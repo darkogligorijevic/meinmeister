@@ -1,4 +1,3 @@
-import React from 'react'
 import cities from '../data/cities.json'
 import { useState } from 'react'
 
@@ -10,7 +9,7 @@ const SearchBar = () => {
     setValue(e.target.value)
   }
 
-  const onSearch = async (searchTerm) => {
+  const onSearch = (searchTerm) => {
     console.log('search', searchTerm)
     setValue(searchTerm)
   }
@@ -24,7 +23,7 @@ const SearchBar = () => {
             value={value}
             onChange={onChange}
             />
-            <button className='px-8 py-4 absolute right-0 md:hover:bg-orange-600 duration-300 md:right-1/2 xl:right-1/2 2xl:right-2/3 bg-orange-500 rounded-3xl' onClick={() => onSearch(value)}>Search</button>
+            <button className='px-8 py-4 absolute right-0 md:hover:bg-orange-600 duration-300 md:right-1/2 xl:right-1/2 2xl:right-2/3 bg-orange-500 rounded-3xl' onClick={() => onSearch(value)}>Pretrazi</button>
         </div>
         <div>
             {cities.filter(city => {
@@ -34,7 +33,7 @@ const SearchBar = () => {
             }).slice(0, 5)
             .map(city => (
                 <ul className='bg-white text-gray-900 md:w-1/2 xl:w-1/3'>
-                    <li key={city.zip} className='px-8 py-2 hover:bg-gray-100' onClick={() => onSearch(city.city + ', ' + city.region)}>{city.city}, {city.region}</li>
+                    <li key={city.zip} className='px-8 py-2 cursor-pointer hover:bg-gray-100' onClick={() => onSearch(city.city + ', ' + city.region)}>{city.city}, {city.region}</li>
                 </ul>
             ))}
         </div>
